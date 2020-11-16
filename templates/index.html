@@ -6,7 +6,13 @@
     <title>Home Page</title>
 </head>
 <body>
-    <h1>Home Page</h1>
-    <h1>Hello</h1>
+    <h1>Home Page!</h1>
+    {% for x in range (10)%}  
+        {%if x % 2 == 1 %}    <!-- Using python for loop and if statement inside the html -->
+        <p>{{x}}</p>
+        {% endif %}
+    {%endfor%}
 </body>
 </html>
+
+
